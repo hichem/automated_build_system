@@ -1,0 +1,201 @@
+<?xml version='1.0'?>
+<XenomaiPatches>
+  <RTextension_version>
+    <patch>
+      <name>xenomai-2.4.5/ksrc/arch/x86/patches/adeos-ipipe-2.6.24-x86-2.0-07.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.6.24</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.5/ksrc/arch/x86/patches/adeos-ipipe-2.6.25-x86-2.0-09.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.6.25</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.5/ksrc/arch/x86/patches/adeos-ipipe-2.4.35.5-i386-1.3-05.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.4.35</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.5/ksrc/arch/x86/patches/adeos-ipipe-2.6.26-x86-2.0-09.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.6.26</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.5/ksrc/arch/ia64/patches/adeos-ipipe-2.6.16-ia64-1.4-00.patch
+</name>
+      <arch>ia64</arch>
+      <kernel>2.6.16</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.5/ksrc/arch/powerpc/patches/adeos-ipipe-2.6.26-powerpc-DENX-2.2-04.patch
+</name>
+      <arch>powerpc</arch>
+      <kernel>2.6.26</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.5/ksrc/arch/powerpc/patches/adeos-ipipe-2.6.24-powerpc-DENX-2.1-04.patch
+</name>
+      <arch>powerpc</arch>
+      <kernel>2.6.24</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.5/ksrc/arch/powerpc/patches/adeos-ipipe-2.4.25-ppc-DENX-1.2-02.patch
+</name>
+      <arch>powerpc</arch>
+      <kernel>2.4.25</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.5/ksrc/arch/powerpc/patches/adeos-ipipe-2.6.20-powerpc-1.8-01.patch
+</name>
+      <arch>powerpc</arch>
+      <kernel>2.6.20</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.5/ksrc/arch/powerpc/patches/adeos-ipipe-2.6.25-powerpc-DENX-2.2-03.patch
+</name>
+      <arch>powerpc</arch>
+      <kernel>2.6.25</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.5/ksrc/arch/arm/patches/imx21-2.6.14-ipipe-1.5-08.patch
+</name>
+      <arch>arm</arch>
+      <kernel>2.6.14</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.5/ksrc/arch/arm/patches/adeos-ipipe-2.6.20-arm-1.8-03.patch
+</name>
+      <arch>arm</arch>
+      <kernel>2.6.20</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.5/ksrc/arch/arm/patches/adeos-ipipe-2.6.26-arm-1.9-03.patch
+</name>
+      <arch>arm</arch>
+      <kernel>2.6.26</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.5/ksrc/arch/arm/patches/adeos-ipipe-2.6.25-arm-1.9-02.patch
+</name>
+      <arch>arm</arch>
+      <kernel>2.6.25</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.5/ksrc/arch/arm/patches/adeos-ipipe-2.6.15-arm-1.5-08.patch
+</name>
+      <arch>arm</arch>
+      <kernel>2.6.15</kernel>
+    </patch>
+    <version>2.4.5</version>
+  </RTextension_version>
+  <RTextension_version>
+    <patch>
+      <name>xenomai-2.4.7/ksrc/arch/blackfin/patches/adeos-ipipe-2.6.28-blackfin.git-1.9-00.patch
+</name>
+      <arch>blackfin</arch>
+      <kernel>2.6.28</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.7/ksrc/arch/x86/patches/adeos-ipipe-2.6.28.7-x86-2.2-06.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.6.28</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.7/ksrc/arch/x86/patches/adeos-ipipe-2.6.27.19-x86-2.2-06.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.6.27</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.7/ksrc/arch/x86/patches/adeos-ipipe-2.4.35.5-i386-1.3-05.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.4.35</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.7/ksrc/arch/x86/patches/adeos-ipipe-2.6.26.7-x86-2.0-16.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.6.26</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.7/ksrc/arch/ia64/patches/adeos-ipipe-2.6.16-ia64-1.4-00.patch
+</name>
+      <arch>ia64</arch>
+      <kernel>2.6.16</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.7/ksrc/arch/powerpc/patches/adeos-ipipe-2.6.27-powerpc-DENX-2.4-03.patch
+</name>
+      <arch>powerpc</arch>
+      <kernel>2.6.27</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.7/ksrc/arch/powerpc/patches/adeos-ipipe-2.6.20-powerpc-1.8-06.patch
+</name>
+      <arch>powerpc</arch>
+      <kernel>2.6.20</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.7/ksrc/arch/powerpc/patches/adeos-ipipe-2.6.28.5-powerpc-DENX-2.4-04.patch
+</name>
+      <arch>powerpc</arch>
+      <kernel>2.6.28</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.7/ksrc/arch/powerpc/patches/adeos-ipipe-2.6.24.6-powerpc-DENX-2.4-03.patch
+</name>
+      <arch>powerpc</arch>
+      <kernel>2.6.24</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.7/ksrc/arch/powerpc/patches/adeos-ipipe-2.4.25-ppc-DENX-1.2-02.patch
+</name>
+      <arch>powerpc</arch>
+      <kernel>2.4.25</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.7/ksrc/arch/powerpc/patches/adeos-ipipe-2.6.26-powerpc-DENX-2.4-03.patch
+</name>
+      <arch>powerpc</arch>
+      <kernel>2.6.26</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.7/ksrc/arch/powerpc/patches/adeos-ipipe-2.6.25-powerpc-DENX-2.2-03.patch
+</name>
+      <arch>powerpc</arch>
+      <kernel>2.6.25</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.7/ksrc/arch/arm/patches/adeos-ipipe-2.6.27-arm-1.12-00.patch
+</name>
+      <arch>arm</arch>
+      <kernel>2.6.27</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.7/ksrc/arch/arm/patches/imx21-2.6.14-ipipe-1.5-08.patch
+</name>
+      <arch>arm</arch>
+      <kernel>2.6.14</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.7/ksrc/arch/arm/patches/adeos-ipipe-2.6.28-arm-1.12-00.patch
+</name>
+      <arch>arm</arch>
+      <kernel>2.6.28</kernel>
+    </patch>
+    <patch>
+      <name>xenomai-2.4.7/ksrc/arch/arm/patches/adeos-ipipe-2.6.26-arm-1.12-00.patch
+</name>
+      <arch>arm</arch>
+      <kernel>2.6.26</kernel>
+    </patch>
+    <version>2.4.7</version>
+  </RTextension_version>
+</XenomaiPatches>

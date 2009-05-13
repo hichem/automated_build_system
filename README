@@ -1,0 +1,17 @@
+This project aims at simplifying the process of cross toolchain generation using crosstool-ng (http://ymorin.is-a-geek.org/
+dokuwiki/projects/crosstool) in order to make it possible to build functional toolchains from a web interface using only
+few essential parameters.
+
+The configuration of the toolchains is passed to the build script in an XML format. The script parses the configuration
+and builds a formal crosstool-ng configuration file by completing the missing parameters according to the target's default
+options and some other rules used by crosstool-ng.
+
+This work is used in conjunction with the tool miniroot (http://github.com/tmonjalo/miniroot/tree/master) to automate the
+build of a minimal realtime linux system. The supported realtime patches are (xenomai, rtai and the preemp-rt patch)
+
+Some sample XML files are provided to give an idea how the configuration is organized.
+
+- i686-nptl-linux-gnu.xml	shows the configuration of a basic x86 toolchain
+- xenomai-patches.xml		is used to keep track of the patches contained in the xenomai linux patch in order to make
+				it easier the automated selection of a patch from a web interface. This file must be updated
+				each time a xenomai version is used.

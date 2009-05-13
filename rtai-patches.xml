@@ -1,0 +1,288 @@
+<?xml version='1.0'?>
+<RTAIPatches>
+  <RTextension_version>
+    <patch>
+      <name>rtai-3.6/base/arch/x86_64/patches/hal-linux-2.6.22-x86_64-1.2-05.patch
+</name>
+      <arch>x86_64</arch>
+      <kernel>2.6.22</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.6/base/arch/x86_64/patches/hal-linux-2.6.23-x86_64-1.4-00.patch
+</name>
+      <arch>x86_64</arch>
+      <kernel>2.6.23</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.6/base/arch/x86_64/patches/hal-linux-2.6.20-x86_64-1.0-08.patch
+</name>
+      <arch>x86_64</arch>
+      <kernel>2.6.20</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.6/base/arch/x86_64/patches/hal-linux-2.6.23-x86_64-1.3-00.patch
+</name>
+      <arch>x86_64</arch>
+      <kernel>2.6.23</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.6/base/arch/x86_64/patches/hal-linux-2.6.19-x86_64-1.0-06.patch
+</name>
+      <arch>x86_64</arch>
+      <kernel>2.6.19</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.6/base/arch/i386/patches/hal-linux-2.4.34-i386-1.3-04.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.4.34</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.6/base/arch/i386/patches/hal-linux-2.6.19-i386-1.7-01.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.6.19</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.6/base/arch/i386/patches/hal-linux-2.6.20-i386-1.8-04.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.6.20</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.6/base/arch/i386/patches/hal-linux-2.4.35.5-i386-1.3-04.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.4.35</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.6/base/arch/i386/patches/hal-linux-2.6.23-i386-1.12-00.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.6.23</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.6/base/arch/i386/patches/hal-linux-2.6.22-i386-1.10-12.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.6.22</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.6/base/arch/i386/patches/hal-linux-2.6.20.21-i386-1.12-00.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.6.20</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.6/base/arch/ppc/patches/hal-linux-2.6.14-ppc-1.5-01.patch
+</name>
+      <arch>powerpc</arch>
+      <kernel>2.6.14</kernel>
+    </patch>
+    <version>3.6</version>
+  </RTextension_version>
+  <RTextension_version>
+    <patch>
+      <name>rtai-3.6.1/base/arch/x86_64/patches/hal-linux-2.6.22-x86_64-1.2-05.patch
+</name>
+      <arch>x86_64</arch>
+      <kernel>2.6.22</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.6.1/base/arch/x86_64/patches/hal-linux-2.6.20-x86_64-1.0-08.patch
+</name>
+      <arch>x86_64</arch>
+      <kernel>2.6.20</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.6.1/base/arch/x86_64/patches/hal-linux-2.6.23-x86_64-1.4-03.patch
+</name>
+      <arch>x86_64</arch>
+      <kernel>2.6.23</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.6.1/base/arch/x86_64/patches/hal-linux-2.6.19-x86_64-1.0-06.patch
+</name>
+      <arch>x86_64</arch>
+      <kernel>2.6.19</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.6.1/base/arch/x86/patches/hal-linux-2.6.24-x86-2.0-05.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.6.24</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.6.1/base/arch/x86/patches/hal-linux-2.6.24-x86-2.0-07.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.6.24</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.6.1/base/arch/i386/patches/hal-linux-2.4.34-i386-1.3-04.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.4.34</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.6.1/base/arch/i386/patches/hal-linux-2.4.36-i386-1.3-04.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.4.36</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.6.1/base/arch/i386/patches/hal-linux-2.6.19-i386-1.7-01.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.6.19</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.6.1/base/arch/i386/patches/hal-linux-2.6.20.21-i386-1.12-03.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.6.20</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.6.1/base/arch/i386/patches/hal-linux-2.4.35.5-i386-1.3-04.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.4.35</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.6.1/base/arch/i386/patches/hal-linux-2.6.22-i386-1.10-12.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.6.22</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.6.1/base/arch/i386/patches/hal-linux-2.6.23-i386-1.12-03.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.6.23</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.6.1/base/arch/ppc/patches/hal-linux-2.6.14-ppc-1.5-01.patch
+</name>
+      <arch>powerpc</arch>
+      <kernel>2.6.14</kernel>
+    </patch>
+    <version>3.6.1</version>
+  </RTextension_version>
+  <RTextension_version>
+    <patch>
+      <name>rtai-3.7/base/arch/arm/patches/at91_hal-linux-2.6.20-arm-AT91.patch
+</name>
+      <arch>arm</arch>
+      <kernel>2.6.20</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.7/base/arch/arm/patches/at91_adeos-ipipe-2.6.20-arm-AT91.patch
+</name>
+      <arch>arm</arch>
+      <kernel>2.6.20</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.7/base/arch/ppc/patches/hal-linux-2.6.14-ppc-1.5-01.patch
+</name>
+      <arch>powerpc</arch>
+      <kernel>2.6.14</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.7/base/arch/ppc/patches/hal-linux-2.6.20-powerpc-1.8-06.patch
+</name>
+      <arch>powerpc</arch>
+      <kernel>2.6.20</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.7/base/arch/x86_64/patches/hal-linux-2.6.19-x86_64-1.0-06.patch
+</name>
+      <arch>x86_64</arch>
+      <kernel>2.6.19</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.7/base/arch/x86_64/patches/hal-linux-2.6.20-x86_64-1.0-08.patch
+</name>
+      <arch>x86_64</arch>
+      <kernel>2.6.20</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.7/base/arch/x86_64/patches/hal-linux-2.6.23-x86_64-1.4-03.patch
+</name>
+      <arch>x86_64</arch>
+      <kernel>2.6.23</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.7/base/arch/x86_64/patches/hal-linux-2.6.22-x86_64-1.2-05.patch
+</name>
+      <arch>x86_64</arch>
+      <kernel>2.6.22</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.7/base/arch/i386/patches/hal-linux-2.4.34-i386-1.3-04.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.4.34</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.7/base/arch/i386/patches/hal-linux-2.4.35.5-i386-1.3-04.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.4.35</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.7/base/arch/i386/patches/hal-linux-2.6.20.21-i386-1.12-03.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.6.20</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.7/base/arch/i386/patches/hal-linux-2.6.22-i386-1.10-12.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.6.22</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.7/base/arch/i386/patches/hal-linux-2.6.19-i386-1.7-01.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.6.19</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.7/base/arch/i386/patches/hal-linux-2.4.36-i386-1.3-04.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.4.36</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.7/base/arch/i386/patches/hal-linux-2.6.23-i386-1.12-03.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.6.23</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.7/base/arch/x86/patches/hal-linux-2.6.25-x86-2.0-09.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.6.25</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.7/base/arch/x86/patches/hal-linux-2.6.28.7-x86-2.2.06.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.2.06</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.7/base/arch/x86/patches/hal-linux-2.6.24-x86-2.0-07.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.6.24</kernel>
+    </patch>
+    <patch>
+      <name>rtai-3.7/base/arch/x86/patches/hal-linux-2.6.27.19-x86-2.2-06.patch
+</name>
+      <arch>x86</arch>
+      <kernel>2.6.27</kernel>
+    </patch>
+    <version>3.7</version>
+  </RTextension_version>
+</RTAIPatches>
