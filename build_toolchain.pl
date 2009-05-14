@@ -14,6 +14,8 @@
 
 use DBI;
 
+my $HOME = '/var/www/html/home';
+
 ## Retrieving the work directory
 my $WORKING_DIR = `readlink -f $0`;
 $WORKING_DIR = `dirname $WORKING_DIR`;
@@ -29,7 +31,7 @@ if($#ARGV == 1)
 		die 'The config file does not exist';
 	}
 	$user_name = $ARGV[1];
-	if( -d "$WORKING_DIR/home/$user_name")
+	if( -d "$HOME/$user_name")
 	{}
 	else
 	{
@@ -74,7 +76,7 @@ my $date_fin = "$mday/".($mon+1)."/$year";
 if($res == 0)
 {
 	$status = 'Chaine prête';
-	#system("cp $WORKING_DIR/home/$user_name/mytoolchains/$xml_file_name.xml $WORKING_DIR/config-toolchains");
+	system("cp $HOME/$user_name/mytoolchains/$xml_file_name.xml $WORKING_DIR/config-toolchains");
 }
 else
 {
