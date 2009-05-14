@@ -87,7 +87,7 @@ $mdp   = "myvlab";
 
 $dbh = DBI->connect($dsn, $login, $mdp) or die "Connection failure\n";
 
-$request = "update toolchain set statut='$status', date_fin='$build_date' where name='$xml_file_name'";
+$request = "update toolchain set status='$status', build_date='$build_date' where name='$xml_file_name'";
 $sth = $dbh->prepare($request);
 $sth->execute();
 
