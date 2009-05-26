@@ -49,7 +49,7 @@ if($xml_config_file =~ m/.*\/(.*)\.xml$/)
 
 $DIR_CROSSTOOL_NG="crosstool-ng-1.3.2";
 $DIR_TARBALLS="tarballs";
-$DIR_USER_TOOLCHAINS="user_toolchains";
+$DIR_USER_TOOLCHAINS="toolchains";
 
 
 chdir "$WORKING_DIR/$DIR_CROSSTOOL_NG";

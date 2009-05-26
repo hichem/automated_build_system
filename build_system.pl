@@ -176,35 +176,73 @@ else
 
 ## Building the system (kernel + root filesystem)
 print "Building the system (kernel + root filesystem)\n";
-system("cp $kernel_config $MINIROOT_DIR ; cp $kernel_config $project_dir");
+system("cp $kernel_config $MINIROOT_DIR");
 $res = system("make clean ; make");
 system("rm $MINIROOT_DIR/*_defconfig");
+
+my $build_status = "Built successfully";
+
 if($res != 0)
 {
-	die "There is some build problems\n";
+	$build_status = "Build failed";
+	print "There is some build problems\n";
 }
 
-## Copying the kernel images to the project directory and the root file system to an nfs share
-print "Copying the kernel images and root filesystem\n";
-my $linux_build_dir = $linux_tarball;
-$linux_build_dir =~ s/$WORK_DIR\/tarballs\/(.*)\.tar.*/$1/;
-
-my @kernel_images = <$MINIROOT_DIR/build/$linux_build_dir/arch/$arch/boot/*Image>;
-foreach $image (@kernel_images)
+if($build_status eq "Built successfully")
 {
-	system("cp $image $project_dir");
+	## Copying the kernel images to the project directory and the root file system to an nfs share
+	print "Copying the kernel images and root filesystem\n";
+	my $linux_build_dir = $linux_tarball;
+	$linux_build_dir =~ s/$WORK_DIR\/tarballs\/(.*)\.tar.*/$1/;
+	system("cp $MINIROOT_DIR/build/$linux_build_dir/.config $project_dir/linux_config");
+	my @kernel_images = <$MINIROOT_DIR/build/$linux_build_dir/arch/$arch/boot/*Image>;
+	foreach $image (@kernel_images)
+	{
+		system("cp $image $project_dir");
+	}
+
+	my $rootfs_dir = "$MINIROOT_DIR/build/root";
+	system("rm -rf $NFS_SHARE/* ; cp -a $rootfs_dir/* $NFS_SHARE");
+
+	## QEMU Simulation
+	print "QEMU Simulation";
+	my %qemu_programs = ( "x86"		=> "qemu",
+						  "x86_64"	=> "qemu-system-x86_64",
+						  "sh"		=> "qemu-system-sh4",
+						  "arm"		=> "qemu-system-arm",
+						  "mips"	=> "qemu-system-mips",
+						  "powerpc"	=> "qemu-system-ppc");
+	my $qemu = $qemu_programs{$arch};
+
+	#system("$qemu -kernel $project_dir/$kernel_iamges[0] -hda /home/hichem/qemu_rootfs.img");
 }
 
-my $rootfs_dir = "$MINIROOT_DIR/build/root";
-system("rm -rf $NFS_SHARE/* ; cp -a $rootfs_dir/* $NFS_SHARE");
+$dsn   = "dbi:mysql:vlab";
+$login = "apache";
+$mdp   = "myvlab";
 
-## QEMU Simulation
-print "QEMU Simulation";
-my %qemu_programs = ( "x86"		=> "qemu",
-					  "x86_64"	=> "qemu-system-x86_64",
-					  "sh"		=> "qemu-system-sh4",
-					  "arm"		=> "qemu-system-arm",
-					  "mips"	=> "qemu-system-mips",
-					  "powerpc"	=> "qemu-system-ppc");
-my $qemu = $qemu_programs{$arch};
-system("$qemu -kernel $project_dir/bzImage -hda /home/hichem/qemu_rootfs.img");
+$dbh = DBI->connect($dsn, $login, $mdp) or die "Connection failure\n";
+## dbh = database handle
+
+## Retrieve the project id
+$project_name = $project_dir;
+$project_name =~ s/.*\/home\/.*\/projects\/(.*)\/.*/$1/;
+$sth = $dbh->prepare("SELECT id FROM project where title='$project_name'");
+
+## Retrieving the configuration name
+$config_name = $project_dir;
+$config_name =~ s/.*\/$project_name\/(.*)/$1/;
+
+## sth = statement handle
+$sth->execute();
+$nb_rows = $sth->{'NUM_OF_FIELDS'};
+if($nb_rows != 1)
+{
+	die 'Something is missing !!!';
+}
+($proj_id) = $sth->fetchrow_array();
+
+
+$request = "update configuration set status='$build_status' where name='$config_name' and proj_id='$proj_id'";
+$sth = $dbh->prepare($request);
+$sth->execute();
