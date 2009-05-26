@@ -178,7 +178,7 @@ else
 print "Building the system (kernel + root filesystem)\n";
 system("cp $kernel_config $MINIROOT_DIR");
 $res = system("make clean ; make");
-system("rm $MINIROOT_DIR/*_defconfig");
+system("rm $MINIROOT_DIR/$kernel_config");
 
 my $build_status = "Built successfully";
 
