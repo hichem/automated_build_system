@@ -131,7 +131,6 @@ my %xenomai_arch_config = ( "x86"		=> "--enable-x86-sep",
 							);
 
 ## Prepare the config file
-print "Preparing the config file";
 if($extension_type ne 'preempt-rt')
 {
 	$patch =~ s/$rt_extension\/(.*)/$1/;
@@ -178,6 +177,7 @@ else
 print "Building the system (kernel + root filesystem)\n";
 system("cp $kernel_config $MINIROOT_DIR");
 $res = system("make clean ; make");
+$kernel_config =~ s/.*\/configs\/(.*)/$1/;
 system("rm $MINIROOT_DIR/$kernel_config");
 
 my $build_status = "Built successfully";
@@ -200,9 +200,6 @@ if($build_status eq "Built successfully")
 	{
 		system("cp $image $project_dir");
 	}
-
-	my $rootfs_dir = "$MINIROOT_DIR/build/root";
-	system("rm -rf $NFS_SHARE/* ; cp -a $rootfs_dir/* $NFS_SHARE");
 
 	## QEMU Simulation
 	print "QEMU Simulation";
